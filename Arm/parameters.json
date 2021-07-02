@@ -1,139 +1,45 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
-  "parameters": {
-    "addressPrefixes": {
-      "value": [
-        "10.0.0.0/16"
-      ]
-    },
-    "adminPassword": {
-      "value": "Password@1234567"
-    },
-    "adminUsername": {
-      "value": "windowsadmin"
-    },
-    "autoShutdownNotificationEmail": {
-      "value": "nakirikantikiran@outlook.com"
-    },
-    "autoShutdownNotificationLocale": {
-      "value": "en"
-    },
-    "autoShutdownNotificationStatus": {
-      "value": "Enabled"
-    },
-    "autoShutdownStatus": {
-      "value": "Enabled"
-    },
-    "autoShutdownTime": {
-      "value": "19:00"
-    },
-    "autoShutdownTimeZone": {
-      "value": "India Standard Time"
-    },
-    "customData": {
-      "value": "null"
-    },
-    "dataDiskResources": {
-      "value": [
-        {
-          "name": "windows_DataDisk_0",
-          "sku": "Premium_LRS",
-          "properties": {
-            "diskSizeGB": 1024,
-            "creationData": {
-              "createOption": "empty"
-            }
-          }
+    "parameters": {
+        "subscriptionId": {
+            "value": "3036df2a-ccc2-445e-82ad-b509bfa8c02e"
+        },
+        "name": {
+            "value": "ARMDep"
+        },
+        "location": {
+            "value": "Central US"
+        },
+        "hostingPlanName": {
+            "value": "undefined"
+        },
+        "serverFarmResourceGroup": {
+            "value": "Azuredevops"
+        },
+        "alwaysOn": {
+            "value": true
+        },
+        "currentStack": {
+            "value": "java"
+        },
+        "phpVersion": {
+            "value": "OFF"
+        },
+        "javaVersion": {
+            "value": "1.8"
+        },
+        "javaContainer": {
+            "value": "JAVA"
+        },
+        "javaContainerVersion": {
+            "value": "SE"
+        },
+        "repoUrl": {
+            "value": "https://github.com/kiran-113/pipelines-java"
+        },
+        "branch": {
+            "value": "master"
         }
-      ]
-    },
-    "dataDisks": {
-      "value": [
-        {
-          "lun": 0,
-          "createOption": "attach",
-          "caching": "None",
-          "writeAcceleratorEnabled": false,
-          "id": null,
-          "name": "windows_DataDisk_0",
-          "storageAccountType": null,
-          "diskSizeGB": null,
-          "diskEncryptionSet": null
-        }
-      ]
-    },
-    "enableHotpatching": {
-      "value": false
-    },
-    "location": {
-      "value": "eastus"
-    },
-    "networkInterfaceName": {
-      "value": "windowsas264"
-    },
-    "networkSecurityGroupName": {
-      "value": "AzureTestVM-nsg-New"
-    },
-    "networkSecurityGroupRules": {
-      "value": [
-        {
-          "name": "RDP",
-          "properties": {
-            "priority": 300,
-            "protocol": "TCP",
-            "access": "Allow",
-            "direction": "Inbound",
-            "sourceAddressPrefix": "*",
-            "sourcePortRange": "*",
-            "destinationAddressPrefix": "*",
-            "destinationPortRange": "3389"
-          }
-        }
-      ]
-    },
-    "osDiskType": {
-      "value": "Premium_LRS"
-    },
-    "patchMode": {
-      "value": "AutomaticByOS"
-    },
-    "publicIpAddressName": {
-      "value": "AzureTestVM-ip-New"
-    },
-    "publicIpAddressSku": {
-      "value": "Basic"
-    },
-    "publicIpAddressType": {
-      "value": "Dynamic"
-    },
-    "subnetName": {
-      "value": "default"
-    },
-    "subnets": {
-      "value": [
-        {
-          "name": "default",
-          "properties": {
-            "addressPrefix": "10.0.0.0/24"
-          }
-        }
-      ]
-    },
-    "virtualMachineComputerName": {
-      "value": "windows"
-    },
-    "virtualMachineName": {
-      "value": "AzureVMNew"
-    },
-    "virtualMachineRG": {
-      "value": "Azuredevops"
-    },
-    "virtualMachineSize": {
-      "value": "Standard_B2s"
-    },
-    "virtualNetworkName": {
-      "value": "myvm-vnet"
     }
-  }
 }
