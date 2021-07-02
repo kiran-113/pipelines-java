@@ -127,7 +127,7 @@
       "value": "AzureVMNew"
     },
     "virtualMachineRG": {
-      "value": "AzureRG"
+      "value": "Azuredevops"
     },
     "virtualMachineSize": {
       "value": "Standard_B2s"
